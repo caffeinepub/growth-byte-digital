@@ -1,0 +1,12 @@
+{
+  "frontend/src/index.css": "Global styles with OKLCH color system defining navy blue, white, and yellow brand tokens for Growth Byte Digital, plus Google Fonts imports for Inter and Poppins.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending the theme with Poppins/Inter font families, navy and brand-yellow color tokens, card shadows, and fade-in animation.",
+  "frontend/src/App.tsx": "Root app component that manages scroll state and composes all landing page sections (Navbar, Hero, Services, About, WhyChooseUs, Contact, Footer).",
+  "frontend/src/components/Navbar.tsx": "Fixed navigation bar using the correct logo path `/assets/generated/logo.dim_512x512.png` with explicit 48px height inline style and object-fit contain, plus desktop nav links, mobile hamburger menu, and smooth scroll behavior.",
+  "frontend/src/components/HeroSection.tsx": "Full-screen hero section with logo updated to use `/assets/generated/logo.dim_512x512.png` at 144px height with inline style, agency name, tagline, dual CTAs, and animated stat counters on a navy dark background.",
+  "frontend/src/components/ServicesSection.tsx": "Services grid showcasing five digital marketing offerings as icon cards plus a CTA card, on a light background.",
+  "frontend/src/components/AboutSection.tsx": "Two-column about section with logo updated to use `/assets/generated/logo.dim_512x512.png` with object-fit contain inline style, floating stat cards, and descriptive copy on a navy dark background with glow effect intact.",
+  "frontend/src/components/WhyChooseUsSection.tsx": "Four-card grid highlighting key differentiators (result-driven, affordable, data-based, local expertise) with numbered decorative labels.",
+  "frontend/src/components/ContactSection.tsx": "Contact section with updated phone number (6265381119) and email (gbdigital@gmail.com) in info links, tel:/mailto: hrefs, and WhatsApp CTA button linking to wa.me/6265381119.",
+  "frontend/src/components/Footer.tsx": "Full footer with logo updated to use `/assets/generated/logo.dim_512x512.png` at 60px height with inline style, agency description, contact details, social icons, quick links, services list, copyright, and caffeine.ai attribution."
+}

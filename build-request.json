@@ -1,0 +1,46 @@
+{
+  "kind": "build_request",
+  "title": "Fix logo not displaying in navbar and footer",
+  "projectName": "Growth Byte Digital",
+  "priority": "high",
+  "requirements": [
+    {
+      "id": "REQ-3",
+      "text": "Save the uploaded Growth Byte Digital logo image as a static asset at frontend/public/assets/generated/logo.png (overwriting any existing file), then fix all components that reference this logo (Navbar.tsx, Footer.tsx, HeroSection.tsx, AboutSection.tsx) so the image renders correctly. Ensure the <img> src attribute uses the correct relative public path '/assets/generated/logo.png', the alt attribute is set to 'Growth Byte Digital', the image has explicit height/width constraints appropriate for each context (height 48px in Navbar, height 60px in Footer, larger display size in HeroSection and AboutSection), and object-fit is set to 'contain' so the logo is never cropped or distorted.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "logo is not showing fix it properly"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The logo image file exists at frontend/public/assets/generated/logo.png",
+        "The Growth Byte Digital logo is visible in the Navbar at approximately 48px height on both desktop and mobile",
+        "The logo is visible in the Footer alongside the agency name text",
+        "The logo is visible in the HeroSection",
+        "The logo is visible in the AboutSection with glow effect intact",
+        "No broken image icons appear anywhere on the page",
+        "The logo is not cropped or distorted — it uses object-fit contain"
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not change the backend",
+    "Do not modify files under frontend/src/hooks/ or frontend/src/main.tsx",
+    "Do not alter existing contact details (phone: 6265381119, email: gbdigital@gmail.com)"
+  ],
+  "nonGoals": [
+    "Adding new sections or features beyond fixing logo display",
+    "Changing the color theme or layout",
+    "Modifying the contact form or WhatsApp button"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": [
+      "Re-export the logo with a transparent background and optimized for web use (WhatsApp Image 2026-02-15 at 12.15.01 AM.jpeg > logo.dim_512x512.png)"
+    ]
+  }
+}

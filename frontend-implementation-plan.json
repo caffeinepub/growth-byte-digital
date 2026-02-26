@@ -1,0 +1,47 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Fix logo not displaying in navbar and footer",
+  "requirements": [
+    {
+      "id": "REQ-3",
+      "summary": "Fix logo display across all components by saving the logo as a static asset and updating all image references to use the correct path with proper sizing and object-fit settings",
+      "acceptanceCriteria": [
+        "The logo image file exists at frontend/public/assets/generated/logo.png",
+        "The Growth Byte Digital logo is visible in the Navbar at approximately 48px height on both desktop and mobile",
+        "The logo is visible in the Footer alongside the agency name text",
+        "The logo is visible in the HeroSection",
+        "The logo is visible in the AboutSection with glow effect intact",
+        "No broken image icons appear anywhere on the page",
+        "The logo is not cropped or distorted — it uses object-fit contain"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/generated/logo.dim_512x512.png",
+          "operation": "create",
+          "description": "Save the generated Growth Byte Digital logo image (converted from WhatsApp Image 2026-02-15 at 12.15.01 AM.jpeg with transparent background and optimized for web at 512x512 dimensions) as a static asset that will be referenced by all components"
+        },
+        {
+          "path": "frontend/src/components/Navbar.tsx",
+          "operation": "modify",
+          "description": "Update the logo <img> element to use src='/assets/generated/logo.dim_512x512.png', set alt='Growth Byte Digital', add explicit height constraint of 48px (with auto width to maintain aspect ratio), and set object-fit to 'contain' to prevent cropping or distortion"
+        },
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "modify",
+          "description": "Update the logo <img> element to use src='/assets/generated/logo.dim_512x512.png', set alt='Growth Byte Digital', add explicit height constraint of 60px (with auto width to maintain aspect ratio), and set object-fit to 'contain' to ensure the logo displays correctly alongside the agency name text"
+        },
+        {
+          "path": "frontend/src/components/HeroSection.tsx",
+          "operation": "modify",
+          "description": "Update the logo <img> element to use src='/assets/generated/logo.dim_512x512.png', set alt='Growth Byte Digital', add explicit width and height constraints appropriate for the hero display size (larger than navbar/footer), and set object-fit to 'contain' to preserve logo proportions on the full-screen hero background"
+        },
+        {
+          "path": "frontend/src/components/AboutSection.tsx",
+          "operation": "modify",
+          "description": "Update the logo <img> element to use src='/assets/generated/logo.dim_512x512.png', set alt='Growth Byte Digital', add explicit width and height constraints appropriate for the about section display, set object-fit to 'contain', and ensure the existing glow effect styling remains intact"
+        }
+      ]
+    }
+  ]
+}

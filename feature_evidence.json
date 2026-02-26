@@ -1,0 +1,26 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-save-the-uploaded-growth-byte-digital-logo-image-as-a-static-asset-at-frontend-public-assets-generated-logo-png-overwriting-any-existing-file-then-fix-all-components-that-reference-this-logo-navbar-tsx-footer-tsx-herosection-tsx-aboutsection-tsx-so-the-image-renders-correctly-ensure-the-img-src-attribute-uses-the-correct-relative-public-path-assets-generated-logo-png-the-alt-attribute-is-set-to-growth-byte-digital-the-image-has-explicit-height-width-constraints-appropriate-for-each-context-height-48px-in-navbar-height-60px-in-footer-larger-display-size-in-herosection-and-aboutsection-and-object-fit-is-set-to-contain-so-the-logo-is-never-cropped-or-distorted",
+      "featureTitle": "Save the uploaded Growth Byte Digital logo image as a static asset at frontend/public/assets/generated/logo.png (overwriting any existing file), then fix all components that reference this logo (Navbar.tsx, Footer.tsx, HeroSection.tsx, AboutSection.tsx) so the image renders correctly. Ensure the <img> src attribute uses the correct relative public path '/assets/generated/logo.png', the alt attribute is set to 'Growth Byte Digital', the image has explicit height/width constraints appropriate for each context (height 48px in Navbar, height 60px in Footer, larger display size in HeroSection and AboutSection), and object-fit is set to 'contain' so the logo is never cropped or distorted.",
+      "files": [
+        "frontend/src/components/AboutSection.tsx",
+        "frontend/src/components/Footer.tsx",
+        "frontend/src/components/HeroSection.tsx",
+        "frontend/src/components/Navbar.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
