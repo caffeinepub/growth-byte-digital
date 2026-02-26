@@ -1,14 +1,12 @@
 # Specification
 
 ## Summary
-**Goal:** Fix the Growth Byte Digital logo not displaying correctly in the Navbar, Footer, HeroSection, and AboutSection.
+**Goal:** Update the hero section with a background image at 45% opacity, a larger logo, removal of the decorative circle, and fix the WhatsApp contact number.
 
 **Planned changes:**
-- Save the Growth Byte Digital logo as a static asset at `frontend/public/assets/generated/logo.png`
-- Fix `Navbar.tsx` to display the logo at 48px height using the correct public path with `object-fit: contain`
-- Fix `Footer.tsx` to display the logo at 60px height using the correct public path with `object-fit: contain`
-- Fix `HeroSection.tsx` to display the logo at an appropriate larger size with `object-fit: contain`
-- Fix `AboutSection.tsx` to display the logo with glow effect intact and `object-fit: contain`
-- Ensure all `<img>` tags use `src="/assets/generated/logo.png"` and `alt="Growth Byte Digital"`
+- Set the hero section background to use the generated background image at 45% opacity, covering the full section, while keeping all text, logo, and buttons fully visible
+- Increase the logo size slightly in the hero section, preserving aspect ratio and object-fit: contain
+- Remove the large decorative circle element from the hero section
+- Update the "Chat on WhatsApp" button link in ContactSection.tsx to use the correct number: `https://wa.me/916265381119`
 
-**User-visible outcome:** The Growth Byte Digital logo is visible and undistorted in the Navbar, Footer, HeroSection, and AboutSection with no broken image icons anywhere on the page.
+**User-visible outcome:** The hero section displays a semi-transparent digital background image, a slightly larger logo, and no decorative circle; the WhatsApp button correctly opens a chat with the right phone number.

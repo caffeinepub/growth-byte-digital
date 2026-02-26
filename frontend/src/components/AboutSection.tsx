@@ -11,7 +11,7 @@ export default function AboutSection() {
               {/* Background glow */}
               <div className="absolute inset-0 bg-brand-yellow opacity-10 blur-3xl rounded-full scale-110" />
               <img
-                src="/assets/generated/logo.dim_512x512.png"
+                src="/assets/logo__1_-removebg-preview.png"
                 alt="Growth Byte Digital"
                 style={{ objectFit: 'contain' }}
                 className="relative z-10 w-56 h-56 md:w-72 md:h-72 drop-shadow-2xl"

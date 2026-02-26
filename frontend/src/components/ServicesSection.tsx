@@ -6,40 +6,60 @@ const services = [
     title: 'Social Media Marketing',
     description:
       'Build a powerful social media presence that engages your audience, grows your following, and converts followers into loyal customers.',
-    color: 'text-sky-400',
-    bg: 'bg-sky-400/10',
+    iconColor: 'text-sky-600',
+    iconBg: 'bg-sky-100',
+    cardBg: 'bg-sky-50',
+    cardBorder: 'border-sky-200',
+    titleColor: 'text-sky-900',
+    descColor: 'text-sky-800/70',
   },
   {
     icon: Target,
     title: 'Meta Ads Management',
     description:
       'Precision-targeted Facebook and Instagram ad campaigns that maximize your reach and deliver measurable results within your budget.',
-    color: 'text-brand-yellow',
-    bg: 'bg-brand-yellow/10',
+    iconColor: 'text-violet-600',
+    iconBg: 'bg-violet-100',
+    cardBg: 'bg-violet-50',
+    cardBorder: 'border-violet-200',
+    titleColor: 'text-violet-900',
+    descColor: 'text-violet-800/70',
   },
   {
     icon: Search,
     title: 'Google Ads',
     description:
       'Dominate search results with expertly managed Google Ads campaigns that drive high-intent traffic and boost conversions.',
-    color: 'text-red-400',
-    bg: 'bg-red-400/10',
+    iconColor: 'text-rose-600',
+    iconBg: 'bg-rose-100',
+    cardBg: 'bg-rose-50',
+    cardBorder: 'border-rose-200',
+    titleColor: 'text-rose-900',
+    descColor: 'text-rose-800/70',
   },
   {
     icon: Users,
     title: 'Lead Generation',
     description:
       'Attract and capture qualified leads through strategic funnels, landing pages, and targeted campaigns designed to fill your pipeline.',
-    color: 'text-green-400',
-    bg: 'bg-green-400/10',
+    iconColor: 'text-emerald-600',
+    iconBg: 'bg-emerald-100',
+    cardBg: 'bg-emerald-50',
+    cardBorder: 'border-emerald-200',
+    titleColor: 'text-emerald-900',
+    descColor: 'text-emerald-800/70',
   },
   {
     icon: MapPin,
     title: 'Local Business Marketing',
     description:
       'Dominate your local market with geo-targeted campaigns, Google Business optimization, and community-focused digital strategies.',
-    color: 'text-purple-400',
-    bg: 'bg-purple-400/10',
+    iconColor: 'text-amber-600',
+    iconBg: 'bg-amber-100',
+    cardBg: 'bg-amber-50',
+    cardBorder: 'border-amber-200',
+    titleColor: 'text-amber-900',
+    descColor: 'text-amber-800/70',
   },
 ];
 
@@ -67,15 +87,15 @@ export default function ServicesSection() {
             return (
               <div
                 key={service.title}
-                className="group bg-card border border-border rounded-xl p-6 md:p-8 shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 cursor-default"
+                className={`group ${service.cardBg} border ${service.cardBorder} rounded-xl p-6 md:p-8 shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300 cursor-default`}
               >
-                <div className={`inline-flex items-center justify-center w-12 h-12 rounded-lg ${service.bg} mb-5`}>
-                  <Icon className={`w-6 h-6 ${service.color}`} />
+                <div className={`inline-flex items-center justify-center w-12 h-12 rounded-lg ${service.iconBg} mb-5`}>
+                  <Icon className={`w-6 h-6 ${service.iconColor}`} />
                 </div>
-                <h3 className="font-heading font-semibold text-navy-dark text-lg mb-3 group-hover:text-navy transition-colors">
+                <h3 className={`font-heading font-semibold ${service.titleColor} text-lg mb-3`}>
                   {service.title}
                 </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
+                <p className={`${service.descColor} text-sm leading-relaxed`}>{service.description}</p>
               </div>
             );
           })}

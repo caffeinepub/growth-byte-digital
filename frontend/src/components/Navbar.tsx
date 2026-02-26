@@ -37,7 +37,7 @@ export default function Navbar({ scrolled }: NavbarProps) {
             className="flex items-center gap-3 group"
           >
             <img
-              src="/assets/generated/logo.dim_512x512.png"
+              src="/assets/logo__1_-removebg-preview.png"
               alt="Growth Byte Digital"
               style={{ height: '48px', width: 'auto', objectFit: 'contain' }}
             />

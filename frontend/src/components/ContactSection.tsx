@@ -17,7 +17,7 @@ export default function ContactSection() {
     setForm({ name: '', email: '', message: '' });
   };
 
-  const whatsappNumber = '6265381119';
+  const whatsappNumber = '916265381119';
   const whatsappMessage = encodeURIComponent('Hi! I\'d like to book a free consultation with Growth Byte Digital.');
 
   return (
@@ -45,7 +45,7 @@ export default function ContactSection() {
               </h3>
               <div className="flex flex-col gap-5">
                 {[
-                  { icon: Phone, label: 'Call Us', value: '+91 62653 81119', href: 'tel:6265381119' },
+                  { icon: Phone, label: 'Call Us', value: '+91 6265381119', href: 'tel:+916265381119' },
                   { icon: Mail, label: 'Email Us', value: 'gbdigital@gmail.com', href: 'mailto:gbdigital@gmail.com' },
                   { icon: MapPin, label: 'Location', value: 'India', href: '#' },
                 ].map((item) => {

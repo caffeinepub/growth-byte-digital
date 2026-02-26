@@ -2,13 +2,10 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-save-the-uploaded-growth-byte-digital-logo-image-as-a-static-asset-at-frontend-public-assets-generated-logo-png-overwriting-any-existing-file-then-fix-all-components-that-reference-this-logo-navbar-tsx-footer-tsx-herosection-tsx-aboutsection-tsx-so-the-image-renders-correctly-ensure-the-img-src-attribute-uses-the-correct-relative-public-path-assets-generated-logo-png-the-alt-attribute-is-set-to-growth-byte-digital-the-image-has-explicit-height-width-constraints-appropriate-for-each-context-height-48px-in-navbar-height-60px-in-footer-larger-display-size-in-herosection-and-aboutsection-and-object-fit-is-set-to-contain-so-the-logo-is-never-cropped-or-distorted",
-      "featureTitle": "Save the uploaded Growth Byte Digital logo image as a static asset at frontend/public/assets/generated/logo.png (overwriting any existing file), then fix all components that reference this logo (Navbar.tsx, Footer.tsx, HeroSection.tsx, AboutSection.tsx) so the image renders correctly. Ensure the <img> src attribute uses the correct relative public path '/assets/generated/logo.png', the alt attribute is set to 'Growth Byte Digital', the image has explicit height/width constraints appropriate for each context (height 48px in Navbar, height 60px in Footer, larger display size in HeroSection and AboutSection), and object-fit is set to 'contain' so the logo is never cropped or distorted.",
+      "featureId": "feature-in-herosection-tsx-set-the-hero-section-background-to-use-the-newly-generated-background-image-asset-at-assets-generated-hero-bg-dim-1920x1080-png-rendered-at-45-opacity-the-background-image-should-cover-the-full-section-object-fit-cover-while-all-existing-text-logo-cta-buttons-and-stats-remain-fully-visible-and-unchanged-in-appearance",
+      "featureTitle": "In HeroSection.tsx, set the hero section background to use the newly generated background image asset at '/assets/generated/hero-bg.dim_1920x1080.png' rendered at 45% opacity. The background image should cover the full section (object-fit: cover) while all existing text, logo, CTA buttons, and stats remain fully visible and unchanged in appearance.",
       "files": [
-        "frontend/src/components/AboutSection.tsx",
-        "frontend/src/components/Footer.tsx",
-        "frontend/src/components/HeroSection.tsx",
-        "frontend/src/components/Navbar.tsx"
+        "frontend/src/components/HeroSection.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -18,7 +15,61 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-3"
+        "REQ-6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-in-herosection-tsx-increase-the-logo-image-size-slightly-compared-to-its-current-dimensions-keep-object-fit-contain-and-maintain-aspect-ratio",
+      "featureTitle": "In HeroSection.tsx, increase the logo image size slightly compared to its current dimensions. Keep object-fit: contain and maintain aspect ratio.",
+      "files": [
+        "frontend/src/components/HeroSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-in-herosection-tsx-locate-and-remove-the-large-decorative-circle-element-rendered-in-the-center-middle-area-of-the-hero-section-remove-only-that-decorative-circle-do-not-alter-any-other-layout-elements",
+      "featureTitle": "In HeroSection.tsx, locate and remove the large decorative circle element rendered in the center/middle area of the hero section. Remove only that decorative circle; do not alter any other layout elements.",
+      "files": [
+        "frontend/src/components/HeroSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-8"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-in-contactsection-tsx-update-the-whatsapp-cta-button-href-to-use-the-correct-number-916265381119-the-link-should-be-formatted-as-https-wa-me-916265381119-update-any-hardcoded-phone-number-references-in-this-button-or-its-surrounding-text-to-reflect-91-6265381119",
+      "featureTitle": "In ContactSection.tsx, update the WhatsApp CTA button href to use the correct number +916265381119. The link should be formatted as 'https://wa.me/916265381119'. Update any hardcoded phone number references in this button or its surrounding text to reflect +91 6265381119.",
+      "files": [
+        "frontend/src/components/ContactSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-9"
       ],
       "confidence": "high"
     }

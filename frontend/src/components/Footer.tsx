@@ -38,11 +38,11 @@ export default function Footer() {
               className="flex items-center gap-3"
             >
               <img
-                src="/assets/generated/logo.dim_512x512.png"
+                src="/assets/logo__1_-removebg-preview.png"
                 alt="Growth Byte Digital Logo"
                 style={{ height: '60px', width: 'auto', objectFit: 'contain' }}
               />
-              <span className="font-heading font-bold text-white text-lg leading-tight">
+              <span className="font-heading font-bold text-white text-xl leading-tight">
                 Growth Byte<br />
                 <span className="text-brand-yellow">Digital</span>
               </span>
@@ -50,24 +50,7 @@ export default function Footer() {
             <p className="text-white/50 text-sm leading-relaxed max-w-xs">
               Helping businesses grow with smart, data-driven digital marketing strategies that deliver real results.
             </p>
-            {/* Contact Details */}
-            <div className="flex flex-col gap-2">
-              <a
-                href="tel:6265381119"
-                className="flex items-center gap-2 text-white/50 text-sm hover:text-brand-yellow transition-colors duration-200"
-              >
-                <Phone className="w-4 h-4 text-brand-yellow flex-shrink-0" />
-                +91 62653 81119
-              </a>
-              <a
-                href="mailto:gbdigital@gmail.com"
-                className="flex items-center gap-2 text-white/50 text-sm hover:text-brand-yellow transition-colors duration-200"
-              >
-                <Mail className="w-4 h-4 text-brand-yellow flex-shrink-0" />
-                gbdigital@gmail.com
-              </a>
-            </div>
-            {/* Social Icons */}
+            {/* Social Links */}
             <div className="flex items-center gap-3">
               {socialLinks.map((social) => {
                 const Icon = social.icon;
@@ -87,10 +70,10 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-heading font-semibold text-white text-sm uppercase tracking-widest mb-5">
+            <h4 className="font-heading font-semibold text-white text-sm uppercase tracking-wider mb-4">
               Quick Links
             </h4>
-            <ul className="flex flex-col gap-3">
+            <ul className="flex flex-col gap-2">
               {navLinks.map((link) => (
                 <li key={link.href}>
                   <a
@@ -105,42 +88,41 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Services */}
+          {/* Contact */}
           <div>
-            <h4 className="font-heading font-semibold text-white text-sm uppercase tracking-widest mb-5">
-              Services
+            <h4 className="font-heading font-semibold text-white text-sm uppercase tracking-wider mb-4">
+              Contact
             </h4>
             <ul className="flex flex-col gap-3">
-              {[
-                'Social Media Marketing',
-                'Meta Ads Management',
-                'Google Ads',
-                'Lead Generation',
-                'Local Business Marketing',
-              ].map((service) => (
-                <li key={service}>
-                  <a
-                    href="#services"
-                    onClick={(e) => { e.preventDefault(); handleNavClick('#services'); }}
-                    className="text-white/50 text-sm hover:text-brand-yellow transition-colors duration-200"
-                  >
-                    {service}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <a
+                  href="tel:6265381119"
+                  className="flex items-center gap-2 text-white/50 text-sm hover:text-brand-yellow transition-colors duration-200"
+                >
+                  <Phone size={14} className="flex-shrink-0" />
+                  6265381119
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:gbdigital@gmail.com"
+                  className="flex items-center gap-2 text-white/50 text-sm hover:text-brand-yellow transition-colors duration-200"
+                >
+                  <Mail size={14} className="flex-shrink-0" />
+                  gbdigital@gmail.com
+                </a>
+              </li>
             </ul>
           </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="border-t border-white/10 py-6 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-white/40 text-xs text-center sm:text-left">
+          <p className="text-white/30 text-xs">
             © {new Date().getFullYear()} Growth Byte Digital. All rights reserved.
           </p>
           <p className="text-white/30 text-xs flex items-center gap-1">
-            Built with{' '}
-            <Heart className="w-3 h-3 text-brand-yellow fill-brand-yellow" />{' '}
-            using{' '}
+            Built with <Heart size={12} className="text-brand-yellow fill-brand-yellow" /> using{' '}
             <a
               href={`https://caffeine.ai/?utm_source=Caffeine-footer&utm_medium=referral&utm_content=${appId}`}
               target="_blank"

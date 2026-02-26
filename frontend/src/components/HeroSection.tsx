@@ -9,12 +9,20 @@ export default function HeroSection() {
       id="home"
       className="relative min-h-screen flex items-center justify-center bg-navy-dark overflow-hidden pt-16 md:pt-20"
     >
+      {/* Background image at 45% opacity */}
+      <div className="absolute inset-0 pointer-events-none">
+        <img
+          src="/assets/generated/hero-bg.dim_1920x1080.png"
+          alt=""
+          aria-hidden="true"
+          style={{ opacity: 0.45, objectFit: 'cover', width: '100%', height: '100%' }}
+        />
+      </div>
+
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-brand-yellow opacity-5 blur-3xl" />
         <div className="absolute bottom-0 -left-32 w-80 h-80 rounded-full bg-white opacity-5 blur-3xl" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full border border-white/5" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] rounded-full border border-white/3" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 text-center">
@@ -27,9 +35,9 @@ export default function HeroSection() {
         {/* Logo mark */}
         <div className="flex justify-center mb-8">
           <img
-            src="/assets/generated/logo.dim_512x512.png"
+            src="/assets/logo__1_-removebg-preview.png"
             alt="Growth Byte Digital"
-            style={{ height: '144px', width: 'auto', objectFit: 'contain' }}
+            style={{ height: '190px', width: 'auto', objectFit: 'contain' }}
             className="drop-shadow-2xl"
           />
         </div>
