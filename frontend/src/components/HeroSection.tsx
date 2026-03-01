@@ -54,17 +54,11 @@ export default function HeroSection() {
           <span className="text-white font-medium">Smart Digital Marketing</span>
         </p>
 
-        {/* CTAs */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <button
-            onClick={() => handleScroll('#contact')}
-            className="px-8 py-4 bg-brand-yellow text-navy-dark font-heading font-bold text-base rounded-md hover:bg-brand-yellow-dark transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-0.5 w-full sm:w-auto"
-          >
-            Get Free Audit
-          </button>
+        {/* CTA */}
+        <div className="flex justify-center items-center">
           <button
             onClick={() => handleScroll('#services')}
-            className="px-8 py-4 bg-transparent border-2 border-white/30 text-white font-heading font-semibold text-base rounded-md hover:border-brand-yellow hover:text-brand-yellow transition-all duration-200 w-full sm:w-auto"
+            className="px-8 py-4 bg-brand-yellow border-2 border-brand-yellow text-navy-dark font-heading font-semibold text-base rounded-md hover:bg-yellow-400 hover:border-yellow-400 transition-all duration-200 w-full sm:w-auto"
           >
             Our Services
           </button>

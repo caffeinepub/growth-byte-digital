@@ -2,11 +2,12 @@
   "frontend/src/index.css": "Global styles with OKLCH color system defining navy blue, white, and yellow brand tokens for Growth Byte Digital, plus Google Fonts imports for Inter and Poppins.",
   "frontend/tailwind.config.js": "Tailwind configuration extending the theme with Poppins/Inter font families, navy and brand-yellow color tokens, card shadows, and fade-in animation.",
   "frontend/src/App.tsx": "Root app component that manages scroll state and composes all landing page sections (Navbar, Hero, Services, About, WhyChooseUs, Contact, Footer).",
-  "frontend/src/components/Navbar.tsx": "Fixed navigation bar updated to use the transparent logo at `/assets/logo__1_-removebg-preview.png` with 48px height and object-fit contain, plus desktop/mobile nav links and smooth scroll behavior.",
-  "frontend/src/components/HeroSection.tsx": "Full-screen hero section with a background image at 45% opacity, enlarged logo (190px height), agency name, tagline, dual CTAs, and animated stat counters — the large decorative circle has been removed.",
-  "frontend/src/components/ServicesSection.tsx": "Services grid with five digital marketing service cards now using a harmonious light color palette (sky blue, violet, rose, emerald, amber) with matching icon backgrounds, borders, and text colors, plus the dark navy CTA card unchanged.",
-  "frontend/src/components/AboutSection.tsx": "Two-column about section updated to use the transparent logo at `/assets/logo__1_-removebg-preview.png` with object-fit contain, floating stat cards, and descriptive copy on a navy dark background.",
-  "frontend/src/components/WhyChooseUsSection.tsx": "Four-card grid highlighting key differentiators (result-driven, affordable, data-based, local expertise) with numbered decorative labels.",
-  "frontend/src/components/ContactSection.tsx": "Contact section with corrected WhatsApp number (916265381119 with country code) linking to wa.me/916265381119, updated phone display to +91 6265381119, contact form, and info links.",
-  "frontend/src/components/Footer.tsx": "Full footer updated to use the transparent logo at `/assets/logo__1_-removebg-preview.png` at 60px height, with agency description, contact details, social icons, quick links, copyright, and caffeine.ai attribution."
+  "frontend/src/components/Navbar.tsx": "Fixed navigation bar with logo and desktop/mobile nav links — no \"Get Free Audit\" CTA button in either desktop or mobile menus.",
+  "frontend/src/components/HeroSection.tsx": "Full-screen hero section with background image, logo, agency name, tagline, a \"Our Services\" CTA button now styled with a yellow background (bg-brand-yellow) and dark navy text, and animated stat counters.",
+  "frontend/src/components/ServicesSection.tsx": "Services grid section with five service cards and a dark navy CTA card; the \"OUR SERVICES\" heading now displays in uppercase inside a yellow (#F9C80E) background box with black text color.",
+  "frontend/src/components/AboutSection.tsx": "Two-column about section using the transparent logo with floating stat cards and descriptive copy on a navy dark background.",
+  "frontend/src/components/WhyChooseUsSection.tsx": "Four-card grid highlighting key differentiators with numbered decorative labels on a light background.",
+  "frontend/src/components/ContactSection.tsx": "Contact section showing phone, email, and location info cards, a WhatsApp CTA button, and a free audit info box — the \"Get in Touch\" / \"Book Your Free Consultation\" section header has been removed.",
+  "frontend/src/components/Footer.tsx": "Full footer with transparent logo, agency description, social icons, quick links, contact details with call number +91 8815610500, copyright, and caffeine.ai attribution.",
+  "frontend/index.html": "HTML shell with correct title \"Growth Byte Digital\" and main entry point reference."
 }

@@ -1,97 +1,38 @@
 {
   "kind": "build_request",
-  "title": "Hero background image at 45% opacity, larger logo, remove decorative circle, fix WhatsApp number",
-  "projectName": "Growth Byte Digital",
+  "title": "Style Hero Section CTA Button with Yellow Background",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-6",
-      "text": "In HeroSection.tsx, set the hero section background to use the newly generated background image asset at '/assets/generated/hero-bg.dim_1920x1080.png' rendered at 45% opacity. The background image should cover the full section (object-fit: cover) while all existing text, logo, CTA buttons, and stats remain fully visible and unchanged in appearance.",
+      "id": "REQ-1",
+      "text": "In HeroSection.tsx, update the 'Our Services' scroll/action button so that its box/background is styled with a yellow color (matching the brand yellow used for the 'OUR SERVICES' heading box in ServicesSection.tsx). Keep the ServicesSection 'OUR SERVICES' heading yellow box styling exactly as it currently is — do not change it.",
       "target": "frontend",
       "source": {
         "messageIds": [
           "msg-4"
         ],
         "quotes": [
-          "background image should be this image in 45% opacity and the logo and all the texts will be same there, they are looking good"
+          "action button jo hero image mai h na usko bola tha yellow colour krne box ka neeche wala our services ko waise hi rakh"
         ]
       },
       "acceptanceCriteria": [
-        "The hero section displays the provided background image behind all content",
-        "The background image opacity is 45% (the image appears semi-transparent)",
-        "All hero text, logo, and buttons remain fully legible and unaffected by the background opacity",
-        "The background image covers the full hero section without stretching or letterboxing"
-      ]
-    },
-    {
-      "id": "REQ-7",
-      "text": "In HeroSection.tsx, increase the logo image size slightly compared to its current dimensions. Keep object-fit: contain and maintain aspect ratio.",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-4"
-        ],
-        "quotes": [
-          "increase the size of the logo a bit"
-        ]
-      },
-      "acceptanceCriteria": [
-        "The logo in the hero section is visibly larger than before",
-        "The logo is not cropped or distorted — object-fit: contain is preserved",
-        "The logo aspect ratio remains correct"
-      ]
-    },
-    {
-      "id": "REQ-8",
-      "text": "In HeroSection.tsx, locate and remove the large decorative circle element rendered in the center/middle area of the hero section. Remove only that decorative circle; do not alter any other layout elements.",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-4"
-        ],
-        "quotes": [
-          "the big circle in between is not looking very good remove it"
-        ]
-      },
-      "acceptanceCriteria": [
-        "The large decorative circle element no longer appears in the hero section",
-        "All other hero section elements (text, logo, buttons, stats) remain unchanged and properly laid out"
-      ]
-    },
-    {
-      "id": "REQ-9",
-      "text": "In ContactSection.tsx, update the WhatsApp CTA button href to use the correct number +916265381119. The link should be formatted as 'https://wa.me/916265381119'. Update any hardcoded phone number references in this button or its surrounding text to reflect +91 6265381119.",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-4"
-        ],
-        "quotes": [
-          "when i tap on the 'chat on whatsapp' button it is showing this number does not exist once again update the number +91 6265381119"
-        ]
-      },
-      "acceptanceCriteria": [
-        "The 'Chat on WhatsApp' button links to 'https://wa.me/916265381119'",
-        "Tapping the button opens WhatsApp with the correct number +91 6265381119",
-        "No other UI changes are made to the contact section"
+        "The action/CTA button in HeroSection.tsx has a yellow background box, consistent with the brand yellow color.",
+        "Button text is legible (black or dark font) against the yellow background.",
+        "The 'OUR SERVICES' heading yellow box in ServicesSection.tsx remains unchanged.",
+        "No other sections or styles are affected."
       ]
     }
   ],
   "constraints": [
-    "Do not modify any text content, typography, or color scheme in the hero section",
-    "Do not alter logo references in Navbar.tsx, Footer.tsx, or AboutSection.tsx",
-    "Do not change the backend"
+    "Do not modify the ServicesSection 'OUR SERVICES' heading yellow box styling.",
+    "Use the existing brand yellow color defined in the Tailwind config or CSS custom properties."
   ],
   "nonGoals": [
-    "Redesigning any section other than the hero background and WhatsApp button",
-    "Changing service card colors or layout",
-    "Modifying the footer or navbar logo size",
-    "Adding new sections or features"
+    "Adding new sections or features to the landing page.",
+    "Changing any other button or element styles outside of the HeroSection CTA button."
   ],
   "imageRequirements": {
-    "required": [
-      "Digital marketing themed background with abstract data/network lines, glowing nodes, and a dark navy-to-deep-blue gradient atmosphere, suitable for a full-screen hero backdrop (hero-bg.dim_1920x1080.png)"
-    ],
+    "required": [],
     "edits": []
   }
 }

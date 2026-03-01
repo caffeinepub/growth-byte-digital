@@ -1,69 +1,22 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Hero background image at 45% opacity, larger logo, remove decorative circle, fix WhatsApp number",
+  "title": "Style Hero Section CTA Button with Yellow Background",
   "requirements": [
     {
-      "id": "REQ-6",
-      "summary": "Add semi-transparent background image to hero section at 45% opacity",
+      "id": "REQ-1",
+      "summary": "Update the 'Our Services' CTA button in HeroSection.tsx to have a yellow background box matching the brand yellow used in ServicesSection.tsx heading",
       "acceptanceCriteria": [
-        "The hero section displays the provided background image behind all content",
-        "The background image opacity is 45% (the image appears semi-transparent)",
-        "All hero text, logo, and buttons remain fully legible and unaffected by the background opacity",
-        "The background image covers the full hero section without stretching or letterboxing"
+        "The action/CTA button in HeroSection.tsx has a yellow background box, consistent with the brand yellow color.",
+        "Button text is legible (black or dark font) against the yellow background.",
+        "The 'OUR SERVICES' heading yellow box in ServicesSection.tsx remains unchanged.",
+        "No other sections or styles are affected."
       ],
       "file_operations": [
         {
           "path": "frontend/src/components/HeroSection.tsx",
           "operation": "modify",
-          "description": "Add a background image layer using the generated asset at frontend/public/assets/generated/hero-bg.dim_1920x1080.png. Implement as an absolutely positioned div or pseudo-element behind all existing content with opacity set to 0.45, object-fit: cover, and full section coverage. Ensure all text, logo, CTA buttons, and stats remain fully visible and unchanged in z-index stacking."
-        }
-      ]
-    },
-    {
-      "id": "REQ-7",
-      "summary": "Increase logo size in hero section while maintaining aspect ratio",
-      "acceptanceCriteria": [
-        "The logo in the hero section is visibly larger than before",
-        "The logo is not cropped or distorted — object-fit: contain is preserved",
-        "The logo aspect ratio remains correct"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/HeroSection.tsx",
-          "operation": "modify",
-          "description": "Increase the logo img element dimensions (width/height or max-width/max-height) by approximately 20-30% compared to current values. Preserve object-fit: contain and maintain the existing aspect ratio to prevent distortion."
-        }
-      ]
-    },
-    {
-      "id": "REQ-8",
-      "summary": "Remove large decorative circle element from hero section center",
-      "acceptanceCriteria": [
-        "The large decorative circle element no longer appears in the hero section",
-        "All other hero section elements (text, logo, buttons, stats) remain unchanged and properly laid out"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/HeroSection.tsx",
-          "operation": "modify",
-          "description": "Locate and delete the large decorative circle div element rendered in the center/middle of the hero section (likely an absolutely positioned div with border-radius: 50%). Remove only that specific element without altering any other layout, positioning, or content."
-        }
-      ]
-    },
-    {
-      "id": "REQ-9",
-      "summary": "Fix WhatsApp button to use correct phone number +916265381119",
-      "acceptanceCriteria": [
-        "The 'Chat on WhatsApp' button links to 'https://wa.me/916265381119'",
-        "Tapping the button opens WhatsApp with the correct number +91 6265381119",
-        "No other UI changes are made to the contact section"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/ContactSection.tsx",
-          "operation": "modify",
-          "description": "Update the WhatsApp CTA button href attribute to 'https://wa.me/916265381119' (no spaces or dashes). Also update any hardcoded phone number text displayed near this button to show '+91 6265381119' for user-facing display consistency."
+          "description": "Update the 'Our Services' scroll/action button styling to use a yellow background (bg-yellow-400 or the brand yellow custom color) and ensure text color is dark (text-navy-900 or text-black) for proper contrast. Keep all other button properties (padding, border-radius, hover effects) intact. Do not modify any other elements in the HeroSection."
         }
       ]
     }

@@ -59,13 +59,6 @@ export default function Navbar({ scrolled }: NavbarProps) {
                 {link.label}
               </a>
             ))}
-            <a
-              href="#contact"
-              onClick={(e) => { e.preventDefault(); handleNavClick('#contact'); }}
-              className="ml-4 px-5 py-2 bg-brand-yellow text-navy-dark font-heading font-semibold text-sm rounded-md hover:bg-brand-yellow-dark transition-colors duration-200 shadow-sm"
-            >
-              Get Free Audit
-            </a>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -93,13 +86,6 @@ export default function Navbar({ scrolled }: NavbarProps) {
                 {link.label}
               </a>
             ))}
-            <a
-              href="#contact"
-              onClick={(e) => { e.preventDefault(); handleNavClick('#contact'); }}
-              className="mt-2 px-4 py-3 bg-brand-yellow text-navy-dark font-heading font-semibold text-sm rounded-md text-center hover:bg-brand-yellow-dark transition-colors duration-200"
-            >
-              Get Free Audit
-            </a>
           </nav>
         </div>
       )}

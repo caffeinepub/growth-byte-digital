@@ -1,12 +1,11 @@
 # Specification
 
 ## Summary
-**Goal:** Update the hero section with a background image at 45% opacity, a larger logo, removal of the decorative circle, and fix the WhatsApp contact number.
+**Goal:** Style the CTA "Our Services" button in the Hero Section with a yellow background matching the brand yellow color.
 
 **Planned changes:**
-- Set the hero section background to use the generated background image at 45% opacity, covering the full section, while keeping all text, logo, and buttons fully visible
-- Increase the logo size slightly in the hero section, preserving aspect ratio and object-fit: contain
-- Remove the large decorative circle element from the hero section
-- Update the "Chat on WhatsApp" button link in ContactSection.tsx to use the correct number: `https://wa.me/916265381119`
+- Update the "Our Services" action/CTA button in `HeroSection.tsx` to have a yellow background box using the existing brand yellow color
+- Ensure button text uses a dark/black font for legibility against the yellow background
+- Leave the "OUR SERVICES" heading yellow box in `ServicesSection.tsx` completely unchanged
 
-**User-visible outcome:** The hero section displays a semi-transparent digital background image, a slightly larger logo, and no decorative circle; the WhatsApp button correctly opens a chat with the right phone number.
+**User-visible outcome:** The "Our Services" CTA button in the Hero Section will display with a yellow background, visually consistent with the brand's yellow accent color used elsewhere on the page.

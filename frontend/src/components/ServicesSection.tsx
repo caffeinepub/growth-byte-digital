@@ -72,8 +72,13 @@ export default function ServicesSection() {
           <span className="inline-block text-brand-yellow font-heading font-semibold text-sm uppercase tracking-widest mb-3">
             What We Offer
           </span>
-          <h2 className="font-heading font-bold text-navy-dark text-3xl sm:text-4xl md:text-5xl mb-4">
-            Our Services
+          <h2 className="font-heading font-bold text-3xl sm:text-4xl md:text-5xl mb-4">
+            <span
+              className="inline-block px-5 py-2 rounded-md"
+              style={{ backgroundColor: '#F9C80E', color: '#000000' }}
+            >
+              OUR SERVICES
+            </span>
           </h2>
           <p className="text-muted-foreground text-base md:text-lg max-w-xl mx-auto">
             Comprehensive digital marketing solutions tailored to accelerate your business growth.
@@ -101,7 +106,7 @@ export default function ServicesSection() {
           })}
 
           {/* CTA Card */}
-          <div className="bg-navy-dark rounded-xl p-6 md:p-8 flex flex-col justify-between shadow-card">
+          <div className="bg-navy-dark rounded-xl p-6 md:p-8 flex flex-col justify-center shadow-card">
             <div>
               <h3 className="font-heading font-bold text-white text-xl mb-3">
                 Ready to grow your business?
@@ -110,15 +115,6 @@ export default function ServicesSection() {
                 Let's discuss a custom strategy tailored specifically for your goals and budget.
               </p>
             </div>
-            <button
-              onClick={() => {
-                const el = document.querySelector('#contact');
-                if (el) el.scrollIntoView({ behavior: 'smooth' });
-              }}
-              className="mt-6 px-6 py-3 bg-brand-yellow text-navy-dark font-heading font-bold text-sm rounded-md hover:bg-brand-yellow-dark transition-colors duration-200 text-center"
-            >
-              Book Free Consultation
-            </button>
           </div>
         </div>
       </div>

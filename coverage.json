@@ -1,57 +1,24 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-26T15:48:06.808Z",
+  "generatedAt": "2026-03-01T10:57:18.942Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
   },
   "requirements": {
-    "total": 4,
-    "implemented": 4,
+    "total": 1,
+    "implemented": 1,
     "items": [
       {
-        "id": "REQ-6",
-        "summary": "In HeroSection.tsx, set the hero section background to use the newly generated background image asset at '/assets/generated/hero-bg.dim_1920x1080.png' rendered at 45% opacity. The background image should cover the full section (object-fit: cover) while all existing text, logo, CTA buttons, and stats remain fully visible and unchanged in appearance.",
+        "id": "REQ-1",
+        "summary": "In HeroSection.tsx, update the 'Our Services' scroll/action button so that its box/background is styled with a yellow color (matching the brand yellow used for the 'OUR SERVICES' heading box in ServicesSection.tsx). Keep the ServicesSection 'OUR SERVICES' heading yellow box styling exactly as it currently is — do not change it.",
         "status": "implemented",
         "plannedFiles": [
           "frontend/src/components/HeroSection.tsx"
         ],
         "matchedFiles": [
           "frontend/src/components/HeroSection.tsx"
-        ]
-      },
-      {
-        "id": "REQ-7",
-        "summary": "In HeroSection.tsx, increase the logo image size slightly compared to its current dimensions. Keep object-fit: contain and maintain aspect ratio.",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/components/HeroSection.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/components/HeroSection.tsx"
-        ]
-      },
-      {
-        "id": "REQ-8",
-        "summary": "In HeroSection.tsx, locate and remove the large decorative circle element rendered in the center/middle area of the hero section. Remove only that decorative circle; do not alter any other layout elements.",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/components/HeroSection.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/components/HeroSection.tsx"
-        ]
-      },
-      {
-        "id": "REQ-9",
-        "summary": "In ContactSection.tsx, update the WhatsApp CTA button href to use the correct number +916265381119. The link should be formatted as 'https://wa.me/916265381119'. Update any hardcoded phone number references in this button or its surrounding text to reflect +91 6265381119.",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/components/ContactSection.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/components/ContactSection.tsx"
         ]
       }
     ]
@@ -61,8 +28,6 @@
     "feature_evidence.json",
     "frontend-file-summaries.txt",
     "frontend-implementation-plan.json",
-    "frontend/public/assets/generated/hero-bg.dim_1920x1080.png",
-    "frontend/src/components/ContactSection.tsx",
     "frontend/src/components/HeroSection.tsx",
     "project_state.json",
     "scratch/component-selection.json",

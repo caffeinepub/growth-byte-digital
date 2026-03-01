@@ -5,7 +5,7 @@ const reasons = [
     icon: BarChart2,
     title: 'Result-Driven Strategy',
     description:
-      'Every campaign we run is built around clear KPIs and measurable outcomes. We don\'t just run ads — we engineer growth.',
+      "Every campaign we run is built around clear KPIs and measurable outcomes. We don't just run ads — we engineer growth.",
     color: 'text-brand-yellow',
     bg: 'bg-brand-yellow/15',
   },
@@ -13,7 +13,7 @@ const reasons = [
     icon: DollarSign,
     title: 'Affordable Solutions',
     description:
-      'Premium digital marketing doesn\'t have to break the bank. We offer flexible packages designed to deliver maximum value at every budget level.',
+      "Premium digital marketing doesn't have to break the bank. We offer flexible packages designed to deliver maximum value at every budget level.",
     color: 'text-green-400',
     bg: 'bg-green-400/15',
   },
